@@ -1,0 +1,13 @@
+[Unit]
+Description=Course Project Backup Daemon
+After=network.target
+
+[Service]
+Type=simple
+User=user-12-03
+Group=user-12-03
+ExecStart=/usr/bin/kp-backup
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
