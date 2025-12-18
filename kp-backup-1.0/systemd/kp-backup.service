@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 Type=simple
-User=user-12-03
-Group=user-12-03
+User=user
+Group=user
 ExecStart=/usr/bin/kp-backup
 Restart=on-failure
 
