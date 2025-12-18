@@ -12,7 +12,7 @@ namespace fs = std::filesystem;
 
 const std::string SOURCE_FILE = "/var/log/secure"; 
 const std::string BACKUP_DIR = "/var/tmp/backups"; 
-const std::string USER_NAME = "zhopa"; //ПОЛЬЗОВАТЕЛЬ!!! ЕСЛИ НЕ БУДЕТ СОВПАДАТЬ, ТО ПРОГРАММА НЕ ЗАПУСТИТСЯ
+const std::string USER_NAME = "user"; //ПОЛЬЗОВАТЕЛЬ!!! ЕСЛИ НЕ БУДЕТ СОВПАДАТЬ, ТО ПРОГРАММА НЕ ЗАПУСТИТСЯ
 
 void log_message(int priority, const std::string& message) {
     syslog(priority, "%s: %s", USER_NAME.c_str(), message.c_str());
